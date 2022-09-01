@@ -243,13 +243,13 @@
                           </div>
                        </div>
                        <br />
-                       <div class="row" id="display-brasier">
+                       <div class="row" id="display-brasier" style="display: none;">
                           <div class="col" style="text-align: center;">
                              <h2>Your Bra Size</h2>
                              <br /> <label id="label-braiser" style="font-size: 30px;">
                              <strong>
-                               <span id="tallaBase">35</span>
-                               <span id="tallaBusto">COPA B</span>
+                               <span id="tallaBase"></span>
+                               <span id="tallaBusto"></span>
                              </strong>
                              </label>
                           </div>
@@ -351,11 +351,13 @@ var panty = 0;
 
 cmPanty.addEventListener("change", function() {
     panty = cmPanty.value;
+    document.getElementById("display-panty").style.display = "block";
     document.getElementById("tallaPanty").innerHTML = calculatePanty(panty);
 });
 
 cmBusto.addEventListener("change", function() {
     busto = cmBusto.value;
+    document.getElementById("display-brasier").style.display = "block";
     document.getElementById("tallaBusto").innerHTML = calculateBusto(busto,calculateBase(base));
 });
 
@@ -477,32 +479,29 @@ function calculatePanty(panty) {
 
 	panty = parseInt(panty);
   
-  
-  
-  if(panty < 95){
-  console.log(panty)
+    if(panty < 95){
     	return "S";
     }
     
-  if(panty >= 95 && panty < 105){
-    	return "M"
-  }
+    if(panty >= 95 && panty < 105){
+    	return "M";
+    }
   
-  if(panty >= 105 && panty < 115){
-    	return "M"
-  }
+    if(panty >= 105 && panty < 115){
+    	return "L";
+    }
   
-  if(panty >= 115 && panty < 125){
-    	return "L"
-  }
+    if(panty >= 115 && panty < 125){
+    	return "XL";
+    }
   
-  if(panty >= 125){
-    	return "M"
-  }
+    if(panty >= 125){
+    	return "XXL";
+    }
   
 }
 
-     </script>
+</script>
     
 </body>
 </html>
