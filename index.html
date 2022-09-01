@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="modal-body">
+        <ul class="nav nav-tabs">
+           <li  class="nav-item" onclick="showChart()"><a class="nav-link active" data-toggle="tab" href="#iqitcharts-tab-0"> SIZE CHART</a></li>
+           <li  class="nav-item" onclick="showCalculator()"><a class="nav-link" data-toggle="tab" href="#iqitcharts-tab-1"> BRA FITTING CALCULATOR </a></li>
+        </ul>
+        <div class="tab-content" id="tab-content">
+           <div class="tab-pane in active" id="iqitcharts-tab-0">
+              <div class="row">
+                 <div class="col-md-12" style="text-align: center;">
+                    <h3>Back Size - Contour</h3>
+                    <p>Measure the contour of your base, in centimeters. Just below the bust.</p>
+                 </div>
+              </div>
+              <div class="container">
+                 <table class="table">
+                    <thead>
+                       <tr>
+                          <th scope="col">BRASIER SIZE</th>
+                          <th scope="col">32</th>
+                          <th scope="col">34</th>
+                          <th scope="col">36</th>
+                          <th scope="col">38</th>
+                          <th scope="col">40</th>
+                       </tr>
+                    </thead>
+                    <tbody>
+                       <tr>
+                          <th scope="row">MEASURE IN CM</th>
+                          <td>69-76</td>
+                          <td>77-83</td>
+                          <td>83-89</td>
+                          <td>90-95</td>
+                          <td>95-100</td>
+                       </tr>
+                    </tbody>
+                 </table>
+              </div>
+              <br />
+              <div class="row">
+                 <div class="col-md-12" style="text-align: center;">
+                    <h3>Cup Size - Bust</h3>
+                    <p>Measure the fullest part of your bust.</p>
+                 </div>
+              </div>
+              <div class="container">
+                 <table class="table">
+                    <thead>
+                       <tr>
+                          <th scope="col">SIZE</th>
+                          <th scope="col">COPA B</th>
+                          <th scope="col">COPA C</th>
+                       </tr>
+                    </thead>
+                    <tbody>
+                       <tr>
+                          <th scope="row">32</th>
+                          <td>82-87</td>
+                          <td>87-90</td>
+                       </tr>
+                       <tr>
+                          <th scope="row">34</th>
+                          <td>87-92</td>
+                          <td>92-95</td>
+                       </tr>
+                       <tr>
+                          <th scope="row">36</th>
+                          <td>95-97</td>
+                          <td>98-100</td>
+                       </tr>
+                       <tr>
+                          <th scope="row">38</th>
+                          <td>100-103</td>
+                          <td>103-105</td>
+                       </tr>
+                       <tr>
+                          <th scope="row">40</th>
+                          <td>105-108</td>
+                          <td>108-110</td>
+                       </tr>
+                    </tbody>
+                 </table>
+              </div>
+              <br />
+              <div class="row">
+                 <div class="col-md-12" style="text-align: center;">
+                    <h3>PANTY - BRAGA</h3>
+                    <p>Take your measurements with a tape measure at the most prominent part of your hips and buttocks</p>
+                 </div>
+              </div>
+              <div class="container">
+                 <table class="table">
+                    <thead>
+                       <tr>
+                          <th scope="col">PANTY SIZE</th>
+                          <th scope="col">S</th>
+                          <th scope="col">M</th>
+                          <th scope="col">L</th>
+                          <th scope="col">XL</th>
+                          <th scope="col">XXL</th>
+                       </tr>
+                    </thead>
+                    <tbody>
+                       <tr>
+                          <th scope="row">MEASURE IN CM</th>
+                          <td>85-95</td>
+                          <td>95-105</td>
+                          <td>105-115</td>
+                          <td>115-125</td>
+                          <td>125-135</td>
+                       </tr>
+                    </tbody>
+                 </table>
+              </div>
+           </div>
+           <div class="tab-pane in" id="iqitcharts-tab-1">
+              <div class="rte-content">
+                 <div class="container">
+                    <div class="container">
+                       <div class="row">
+                          <div class="col" style="text-align: center;">
+                             <h2>Find the right size for your profile</h2>
+                          </div>
+                       </div>
+                       <br /> <br />
+                       <div class="row">
+                          <div class="col" style="text-align: center;">
+                             <h2>Brasier Size</h2>
+                          </div>
+                       </div>
+                       <hr />
+                       <div class="row" style="margin-left: 20px;">
+                          <div class="col-md-12">
+                             <div class="row">
+                                <div class="col-md-4"><label><strong>Cup Size - Bust</strong></label></div>
+                                <div class="col-md-8">
+                                   <div class="input-group">
+                                      <select id="cmBusto" class="form-control glovo-times" style="height: 3rem; border-radius: .5rem; appearance: none;">
+                                         <option value="">In centimetres</option>
+                                         <option value="69">69</option>
+                                         <option value="70">70</option>
+                                         <option value="71">71</option>
+                                         <option value="72">72</option>
+                                         <option value="73">73</option>
+                                         <option value="74">74</option>
+                                         <option value="75">75</option>
+                                         <option value="76">76</option>
+                                         <option value="77">77</option>
+                                         <option value="78">78</option>
+                                         <option value="79">79</option>
+                                         <option value="80">80</option>
+                                         <option value="81">81</option>
+                                         <option value="82">82</option>
+                                         <option value="83">83</option>
+                                         <option value="84">84</option>
+                                         <option value="85">85</option>
+                                         <option value="86">86</option>
+                                         <option value="87">87</option>
+                                         <option value="88">88</option>
+                                         <option value="89">89</option>
+                                         <option value="90">90</option>
+                                         <option value="91">91</option>
+                                         <option value="92">92</option>
+                                         <option value="93">93</option>
+                                         <option value="94">94</option>
+                                         <option value="95">95</option>
+                                         <option value="96">96</option>
+                                         <option value="97">97</option>
+                                         <option value="98">98</option>
+                                         <option value="99">99</option>
+                                         <option value="100">100</option>
+                                         <option value="101">101</option>
+                                         <option value="102">102</option>
+                                         <option value="103">103</option>
+                                         <option value="104">104</option>
+                                         <option value="105">105</option>
+                                         <option value="106">106</option>
+                                         <option value="107">107</option>
+                                         <option value="108">108</option>
+                                         <option value="109">109</option>
+                                         <option value="110">110</option>
+                                      </select>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                       <br />
+                       <div class="row" style="margin-left: 20px;">
+                          <div class="col-md-12">
+                             <div class="row">
+                                <div class="col-md-4"><label><strong>Base Contour - Back</strong></label></div>
+                                <div class="col-md-8">
+                                   <div class="input-group">
+                                      <select id="cmBase" class="form-control glovo-times" style="height: 3rem; border-radius: .5rem; appearance: none;">
+                                         <option value="">In centimetres</option>
+                                         <option value="69">69</option>
+                                         <option value="70">70</option>
+                                         <option value="71">71</option>
+                                         <option value="72">72</option>
+                                         <option value="73">73</option>
+                                         <option value="74">74</option>
+                                         <option value="75">75</option>
+                                         <option value="76">76</option>
+                                         <option value="77">77</option>
+                                         <option value="78">78</option>
+                                         <option value="79">79</option>
+                                         <option value="80">80</option>
+                                         <option value="81">81</option>
+                                         <option value="82">82</option>
+                                         <option value="83">83</option>
+                                         <option value="84">84</option>
+                                         <option value="85">85</option>
+                                         <option value="86">86</option>
+                                         <option value="87">87</option>
+                                         <option value="88">88</option>
+                                         <option value="89">89</option>
+                                         <option value="90">90</option>
+                                         <option value="91">91</option>
+                                         <option value="92">92</option>
+                                         <option value="93">93</option>
+                                         <option value="94">94</option>
+                                         <option value="95">95</option>
+                                         <option value="96">96</option>
+                                         <option value="97">97</option>
+                                         <option value="98">98</option>
+                                         <option value="99">99</option>
+                                         <option value="100">100</option>
+                                      </select>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                       <br />
+                       <div class="row" id="display-brasier">
+                          <div class="col" style="text-align: center;">
+                             <h2>Your Bra Size</h2>
+                             <br /> <label id="label-braiser" style="font-size: 30px;">
+                             <strong>
+                               <span id="tallaBase">35</span>
+                               <span id="tallaBusto">COPA B</span>
+                             </strong>
+                             </label>
+                          </div>
+                       </div>
+                       <br />
+                       <hr />
+                       <div class="row">
+                          <div class="col" style="text-align: center;">
+                             <h2>Panty Size</h2>
+                          </div>
+                       </div>
+                       <div class="row" style="margin-left: 20px;">
+                          <div class="col-md-12">
+                             <div class="row">
+                                <div class="col-md-4"><label><strong>PANTY - BRAGA</strong></label></div>
+                                <div class="col-md-8">
+                                   <div class="input-group">
+                                      <select id="cmPanty" class="form-control glovo-times" style="height: 3rem; border-radius: .5rem; appearance: none;">
+                                         <option value="">In centimetres</option>
+                                         <option value="85">85</option>
+                                         <option value="86">86</option>
+                                         <option value="87">87</option>
+                                         <option value="88">88</option>
+                                         <option value="89">89</option>
+                                         <option value="90">90</option>
+                                         <option value="91">91</option>
+                                         <option value="92">92</option>
+                                         <option value="93">93</option>
+                                         <option value="94">94</option>
+                                         <option value="95">95</option>
+                                         <option value="96">96</option>
+                                         <option value="97">97</option>
+                                         <option value="98">98</option>
+                                         <option value="99">99</option>
+                                         <option value="100">100</option>
+                                         <option value="101">101</option>
+                                         <option value="102">102</option>
+                                         <option value="103">103</option>
+                                         <option value="104">104</option>
+                                         <option value="105">105</option>
+                                         <option value="106">106</option>
+                                         <option value="107">107</option>
+                                         <option value="108">108</option>
+                                         <option value="109">109</option>
+                                         <option value="110">110</option>
+                                         <option value="111">111</option>
+                                         <option value="112">112</option>
+                                         <option value="113">113</option>
+                                         <option value="114">114</option>
+                                         <option value="115">115</option>
+                                         <option value="116">116</option>
+                                         <option value="117">117</option>
+                                         <option value="118">118</option>
+                                         <option value="119">119</option>
+                                         <option value="120">120</option>
+                                         <option value="121">121</option>
+                                         <option value="122">122</option>
+                                         <option value="123">123</option>
+                                         <option value="124">124</option>
+                                         <option value="125">125</option>
+                                         <option value="126">126</option>
+                                         <option value="127">127</option>
+                                         <option value="128">128</option>
+                                         <option value="129">129</option>
+                                         <option value="130">130</option>
+                                         <option value="131">131</option>
+                                         <option value="132">132</option>
+                                         <option value="133">133</option>
+                                         <option value="134">134</option>
+                                         <option value="135">135</option>
+                                      </select>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                       <br /> <br />
+                       <div class="row" id="display-panty" style="display: none;">
+                          <div class="col" style="text-align: center;">
+                             <h2>Your Panty Size</h2>
+                             <br /> <label id="label-panty" style="font-size: 30px;"><strong></strong></label>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+
+     <script>
+         //SE REGISTRA EVENTO CHANGE EN SELECTOR DE BUSTO
+var cmBusto = document.getElementById("cmBusto");
+var cmPanty = document.getElementById("cmPanty");
+var cmBase = document.getElementById("cmBase");
+var busto = 0;
+var base = 0;
+var panty = 0;
+
+cmPanty.addEventListener("change", function() {
+    panty = cmPanty.value;
+    document.getElementById("tallaPanty").innerHTML = calculatePanty(panty);
+});
+
+cmBusto.addEventListener("change", function() {
+    busto = cmBusto.value;
+    document.getElementById("tallaBusto").innerHTML = calculateBusto(busto,calculateBase(base));
+});
+
+var cmBase = document.getElementById("cmBase");
+cmBase.addEventListener("change", function() {
+    base = cmBase.value;
+    document.getElementById("tallaBase").innerHTML = calculateBase(base);
+    document.getElementById("tallaBusto").innerHTML = calculateBusto(busto,calculateBase(base));
+});
+
+function showChart()
+{
+	document.getElementById("iqitcharts-tab-0").style.display = "block";
+  document.getElementById("iqitcharts-tab-1").style.display = "none";
+}
+
+function showCalculator()
+{
+	document.getElementById("iqitcharts-tab-1").style.display = "block";
+  document.getElementById("iqitcharts-tab-0").style.display = "none";
+}
+
+function calculateBase(base)
+{
+	base = parseInt(base);
+  
+  
+  if(base >= 69 && base <= 76){
+  	return 32
+  }
+  
+  if(base >= 77 && base <= 83){
+  	return 34
+  }
+  
+  if(base >= 83 && base <= 89){
+  	return 36
+  }
+  
+  if(base >= 90 && base <= 95){
+  	return 38
+  }
+  
+  if(base >= 95 && base <= 100){
+  	return 40
+  }
+}
+
+function calculateBusto(busto,baseSize)
+{
+	busto = parseInt(busto);
+  console.log("mostrando busto ",busto);
+  console.log("mostrando baseSize ",baseSize);
+  
+ 	if(baseSize === 32){
+  	
+    if(busto >= 82 && busto <= 87){
+    	return "COPA B"
+    }
+    
+    if(busto >= 87 && busto <= 90){
+    	return "COPA C"
+    }
+    
+  }
+  
+  if(baseSize === 34){
+  	
+    if(busto >= 87 && busto <= 92){
+    	return "COPA B"
+    }
+    
+    if(busto >= 92 && busto <= 95){
+    	return "COPA C"
+    }
+    
+  }
+  
+  if(baseSize === 36){
+  	
+    if(busto >= 95 && busto <= 97){
+    	return "COPA B"
+    }
+    
+    if(busto >= 98 && busto <= 100){
+    	return "COPA C"
+    }
+    
+  }
+  
+  if(baseSize === 38){
+  	
+    if(busto >= 100 && busto <= 103){
+    	return "COPA B"
+    }
+    
+    if(busto >= 103 && busto <= 105){
+    	return "COPA C"
+    }
+    
+  }
+  
+  if(baseSize === 40){
+  	
+    if(busto >= 105 && busto <= 108){
+    	return "COPA B"
+    }
+    
+    if(busto >= 108 && busto <= 110){
+    	return "COPA C"
+    }
+    
+  }
+  
+  return "BASE";
+}
+
+function calculatePanty(panty) {
+
+	panty = parseInt(panty);
+  
+  
+  
+  if(panty < 95){
+  console.log(panty)
+    	return "S";
+    }
+    
+  if(panty >= 95 && panty < 105){
+    	return "M"
+  }
+  
+  if(panty >= 105 && panty < 115){
+    	return "M"
+  }
+  
+  if(panty >= 115 && panty < 125){
+    	return "L"
+  }
+  
+  if(panty >= 125){
+    	return "M"
+  }
+  
+}
+
+     </script>
+    
+</body>
+</html>
